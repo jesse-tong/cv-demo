@@ -38,51 +38,55 @@ export default function Home() {
   personal_info['place'] = "Ho Chi Minh City";
   
   const summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci non turpis suscipit fermentum. Donec ac eros id nisi ultricies cursus. Integer diam felis, molestie in sodales et, fermentum at eros. Cras gravida mi ac facilisis aliquet. In consequat magna a pellentesque fringilla. Proin et velit interdum, commodo nisl eget, mollis quam. ";
-  
+  const image = "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   return (
     <>
-      <div className="m-auto container-fluid bg-light" style={{maxWidth: '1000px'}}>
-        <div>
-          <CVHeader image="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-           name="Khang Minh" role="Some Developer" contact_list={contact_list} summary={summary} personal_info={personal_info}/>
-        </div>
-        <div className="mx-4 mt-4 mb-3 row">
-          <div className="col-9">
-            <div className="row">
-              {/*column 1*/}
-              <div className="col-6">
-                <Section icon="rocket-takeoff" section_str="Skills" />
-                <ul>
-                  <li><p>Skill 1</p></li>
-                  <li><p>Skill 2</p></li>
-                  <li><p>Skill 3</p></li>
-                  <li><p>Skill 4</p></li>
-                </ul>
-              </div>
-              {/*column 2*/}
-              <div className="col">
-                <Section icon="suitcase-lg-fill" section_str="Experience" />
-                <h5>Role 1</h5>
-                <p><em>Company 1: </em>Date 1 - Date 2</p>
-                <ul>
-                  <li><p>Skill 1</p></li>
-                  <li><p>Skill 2</p></li>
-                  <li><p>Skill 3</p></li>
-                  <li><p>Skill 4</p></li>
-                </ul>
-                <h5>Role 2</h5>
-                <p><em>Company 2: </em>Date 1 - Date 2</p>
-                <ul>
-                  <li><p>Skill 1</p></li>
-                  <li><p>Skill 2</p></li>
-                  <li><p>Skill 3</p></li>
-                  <li><p>Skill 4</p></li>
-                </ul>
+      <div className="m-auto row bg-light" style={{maxWidth: '1000px'}}>
+        <div className="col-8 ms-4 me-3 mt-4 mb-3">
+          <div>
+            <CVHeader 
+             name="Khang Minh" role="Some Developer" contact_list={contact_list} summary={summary} personal_info={personal_info}/>
+          </div>
+          <div className="row">
+            <div className="col">
+              <div className="row">
+                {/*column 1*/}
+                <div className="col-6">
+                  <Section icon="rocket-takeoff" section_str="Skills" />
+                  <ul>
+                    <li><p>Skill 1</p></li>
+                    <li><p>Skill 2</p></li>
+                    <li><p>Skill 3</p></li>
+                    <li><p>Skill 4</p></li>
+                  </ul>
+                </div>
+                {/*column 2*/}
+                <div className="col">
+                  <Section icon="suitcase-lg-fill" section_str="Experience" />
+                  <h5>Role 1</h5>
+                  <p><em>Company 1: </em>Date 1 - Date 2</p>
+                  <ul>
+                    <li><p>Skill 1</p></li>
+                    <li><p>Skill 2</p></li>
+                    <li><p>Skill 3</p></li>
+                    <li><p>Skill 4</p></li>
+                  </ul>
+                  <h5>Role 2</h5>
+                  <p><em>Company 2: </em>Date 1 - Date 2</p>
+                  <ul>
+                    <li><p>Skill 1</p></li>
+                    <li><p>Skill 2</p></li>
+                    <li><p>Skill 3</p></li>
+                    <li><p>Skill 4</p></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-3 bg-primary">
-            
+        </div>
+        <div className="col-3 bg-main">
+          <div className="mx-3 mt-4">
+            <img src={image} className="border border-2 border-secondary rounded-circle" alt="CV Image" style={{width: '100%', aspectRatio: '1/1'}}></img>
           </div>
         </div>
       </div>
