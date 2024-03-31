@@ -43,8 +43,8 @@ export default function Home() {
     <>
       <div className="m-auto container-fluid bg-light" style={{maxWidth: '1200px'}}>
         <div>
-          <CVHeader image="https://www.bse.vt.edu/content/bse_vt_edu/en/people/faculty/david-sample/jcr:content/bio-image.transform/xl-medium/image.jpg"
-           name="Khang Minh" role="Backend Developer" contact_list={contact_list} summary={summary} personal_info={personal_info}/>
+          <CVHeader image="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+           name="Khang Minh" role="Some Developer" contact_list={contact_list} summary={summary} personal_info={personal_info}/>
         </div>
         <div className="row  mx-4 mt-4 mb-3">
           {/*column 1*/}

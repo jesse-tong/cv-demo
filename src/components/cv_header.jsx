@@ -15,11 +15,10 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
       <div className="container-fluid">
         <div className="mx-4 mt-4 mb-3 row" >
           <div className="col-9 ms-0 my-0 me-3">
-            <h1 style={{fontFamily: "helvetica"}} className="display-2"><b>{name}</b></h1>
+            <h1 style={{fontFamily: "helvetica"}} className="display-2 text-danger"><b>{name}</b></h1>
             <h4 style={{fontFamily: "helvetica", fontSize: '18px'}} className="text-secondary">{role}</h4>
             <div className="mt-3">
-              <h5 className="text-primary">Summary</h5>
-              <p>{summary}</p>
+              
               <h5 className="text-primary">Personal info</h5>
               <ul>
                 <li>Phone number: {phone_number}</li>
@@ -28,12 +27,18 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
                 <li>Birth date: {birth_date}</li>
                 <li>Birth place: {birth_place}</li>
               </ul>
+              <div className="col">
+                <div className="row"></div>
+              </div>
+              <h5 className="text-primary">Summary</h5>
+              <p>{summary}</p>
             </div>
           </div>
           <div className="col">
             <img src={image} className="border border-2 border-secondary rounded-circle"alt="CV Image" style={{width: '100%', aspectRatio: '1/1'}}></img>
           </div>
         </div>
+        <div className="" />
       </div>
     </>
   );
