@@ -9,8 +9,6 @@ export default defineConfig({
     outDir: "build"
   },
   server: {
-    cors: {
-        origin: false
-    }
+    cors: false
   }
 });
