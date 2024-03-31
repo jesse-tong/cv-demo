@@ -14,3 +14,5 @@ function Section({icon, section_str}){
     </>
   );
 }
+
+export default Section;

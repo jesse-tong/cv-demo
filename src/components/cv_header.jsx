@@ -21,14 +21,22 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
               <h5 className="text-primary">Summary</h5>
               <p>{summary}</p>
               <h5 className="text-primary">Personal info</h5>
-              <ul></ul>
+              <ul>
+                <li>Phone number: {phone_number}</li>
+                <li>Email: {email}</li>
+                <li>Gender: {gender}</li>
+                <li>Birth date: {birth_date}</li>
+                <li>Birth place: {birth_place}</li>
+              </ul>
             </div>
           </div>
           <div className="col">
-            <img src={image} className="border border-2 border-secondary rounded-circle"alt="CV Image"></img>
+            <img src={image} className="border border-2 border-secondary rounded-circle"alt="CV Image" style="width: 100%; aspectRatio: 1/1"></img>
           </div>
         </div>
       </div>
     </>
   );
 }
+
+export default CVHeader;
