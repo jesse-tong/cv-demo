@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM, { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./app.jsx";
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -11,6 +12,7 @@ import { HelmetProvider } from 'react-helmet-async';
 */
 
 // Render the site https://reactjs.org/docs/react-dom.html#render
+c
 ReactDOM.render(
   <React.StrictMode>
     <HelmetProvider>
