@@ -7,7 +7,7 @@ function Section({icon, section_str}){
         <div className="col-1 bg-primary" style={{width: '35px'}}>
           <i className={" bi bi-" + icon}></i>
         </div>
-        <div className="col border-bottom border-4 border-primary me-3">
+        <div className="col border-bottom border-4 border-main me-3">
           <span className="ms-2 my-auto" style={{fontFamily: "helvetica, arial", fontSize: 24 + 'px'}}><b>{section_str}</b></span>
         </div>
       </div>
