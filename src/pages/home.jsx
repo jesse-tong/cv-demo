@@ -55,10 +55,10 @@ export default function Home() {
                 </div>
                 {/*column 2*/}
                 <div className="col">
-                  <Section icon="" section_str="Kinh nghiệm làm việc" />
-                  <Section icon="suitcase-lg-fill" section_str="Học vấn" />
+                  <Section icon="suitcase-lg-fill" section_str="Kinh nghiệm làm việc" />
+                  <Section icon="mortarboard-fill" section_str="Học vấn" />
                   <Subsection title={"ĐH KHTN - ĐHQG TP.HCM"} time={"2021-Dự kiến 9/2025"} description={""} />
-                  <Section icon="" section_str="Kỹ năng" />
+                  <Section icon="person-check" section_str="Kỹ năng" />
                   <Subsection title={"Kỹ năng chính: "} time={""} description="" list={['Backend: Express.js, Flask, ASP.NET (sẽ học)', 'CSDL: MariaDB, MongoDB, SQL Server', 'Frontend: React, Vue.js',
                                                                                         'Testing & QA: Selenium (sẽ học), Docker(sẽ học)', 'Kỹ năng khác: Jira, Git, Linux']} />
                   <Subsection title={"Kỹ năng khác: "} time={""} description="" list={['Numpy, Pandas, Tensorflow,...']} />
