@@ -56,7 +56,13 @@ export default function Home() {
                 {/*column 1*/}
                 <div className="col-6">
                   <Section icon="rocket-takeoff" section_str="Dự án đã làm" />
-                  <Subection title={"Ứng dụng hỗ trợ học tiếng Anh bằng AI" time=""
+                  <Subsection title={"Ứng dụng hỗ trợ học tiếng Anh bằng AI"} time={"2/2024 - 4/2024"}
+                    description={"Một ứng dụng đơn giản cho đồ án Xử lý ngôn ngữ tự nhiên ứng dụng."}
+                    list={['Sử dụng Streamlit, API Gemini, Tortoise TTS, GoT', 'Ứng dụng hỗ trợ tóm tắt văn bản, giải thích nghĩa từ và câu, chỉnh ngữ pháp,...']}
+                    />
+                  <Subsection title={"Ứng dụng thư viện online sử dụng Flask, MariaDB và Vue.js"} time={'2/2024 - Dự kiến tháng 6-2024'}
+                    description={"Ứng dụng thư viện online trên nền tảng Web, cho phép thêm, mượn sách, đọc sách online."}
+                    list={[]} />
                 </div>
                 {/*column 2*/}
                 <div className="col">
