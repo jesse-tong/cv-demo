@@ -14,6 +14,7 @@ import { Router, Link } from "wouter";
 // Import and apply CSS stylesheet
 import "./styles/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+ import "bootstrap-icons/font/bootstrap-icons.css";
 
 // Where all of our pages come from
 import PageRouter from "./components/router.jsx";
