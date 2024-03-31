@@ -5,6 +5,7 @@ import { Link } from "wouter";
 import CVHeader from '../components/cv_header';
 import Section from '../components/section';
 import Summary from '../components/summary';
+import Fillbar from '../components/fillbar';
 
 // Our language strings for the header
 const strings = [
@@ -90,6 +91,9 @@ export default function Home() {
             <img src={image} className="border border-2 border-secondary rounded-circle" alt="CV Image" style={{width: '100%', aspectRatio: '1/1'}}></img>
           </div>
           <Summary summary={summary} />
+          <div className="mt-2 w-100">
+            <Fillbar value="36" />
+          </div>
         </div>
       </div>
     </>

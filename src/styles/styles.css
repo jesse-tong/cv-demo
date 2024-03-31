@@ -74,18 +74,20 @@ to this section's matching END comment to see page-specific styles.
 }
 
 .fillbar {
+  position: relative;
   height: 14px;
   border-radius: 7px;
   width: 100%;
-  position: relative;
-  background-color: #efab3d;
+  background-color: #f5ebd6;
   border: 1px solid #f5ebd6;
 }
 
 .fillbar-value {
   position: absolute;
-  height: 14px;
+  top: 0%;
+  left: 0;
+  height: 12px;
   border-radius: 7px;
-  background-color: #f5ebd6;
+  background-color: #efab3d;
 }
 
