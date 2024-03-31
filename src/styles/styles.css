@@ -49,3 +49,17 @@ to this section's matching END comment to see page-specific styles.
 .text-main {
   color: #2d2b42;
 }
+
+.summary-left-quote{
+  position: absolute;
+  top: 3%;
+  left: 0%;
+}
+
+.summary-right-quote {
+  position: absolute;
+  top: 95%;
+  left: 90%;
+
+}
+
