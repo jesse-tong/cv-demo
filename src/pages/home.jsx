@@ -34,10 +34,10 @@ export default function Home() {
      - We'll call setHello when the user clicks to change the string
   */
   const [hello, setHello] = React.useState(strings[0]);
-  var contact_list = new Map(); contact_list['phone_number'] = "0123456789";
-  contact_list['git'] = 'https://gitlab.com/jesse-tong'; contact_list['email'] = "someemail@smtpserver.com";
+  var contact_list = new Map(); contact_list['phone_number'] = "0878668596";
+  contact_list['git'] = 'https://github.com/jesse-tong'; contact_list['email'] = "someemail@smtpserver.com";
   
-  var personal_info = new Map(); personal_info['gender'] = 'Gender here'; personal_info['birth_date'] = "Some birthdate";
+  var personal_info = new Map(); personal_info['gender'] = 'Gender here'; personal_info['birth_date'] = "02/10/2002";
   personal_info['place'] = "Ho Chi Minh City";
   
   const summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci non turpis suscipit fermentum. Donec ac eros id nisi ultricies cursus. Integer diam felis, molestie in sodales et, fermentum at eros. Cras gravida mi ac facilisis aliquet. In consequat magna a pellentesque fringilla. Proin et velit interdum, commodo nisl eget, mollis quam. ";
@@ -48,7 +48,7 @@ export default function Home() {
         <div className="col-8 ms-4 me-3 mt-4 mb-3">
           <div>
             <CVHeader 
-             name="Khang Minh" role="Some Developer" contact_list={contact_list} summary={summary} personal_info={personal_info}/>
+             name="Tống Nguyễn Minh Khang" role="Backend Developer" contact_list={contact_list} summary={summary} personal_info={personal_info}/>
           </div>
           <div className="row">
             <div className="col">

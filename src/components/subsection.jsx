@@ -2,20 +2,23 @@ import React from 'react';
 
 function Subsection({title, time, description, list}){
   const list_details = list || null;
-  const subsection_list_elements = list_details != null ? list_details.forEach(item => {
-    return (
-      <>
-        <li><p>{item}</p></li>
-      </>
-    )}
-  ) : '';
-  console.log(list)
+  const subsection_list_elements = new Array();
+  if (list_details !== null) {
+    list_details.forEach(function(item){
+      subsection_list_elements.push(
+        (<>
+          <li><p>{item}</p></li>
+        </>)
+      );}
+    );
+  }
+
   return (
     <>
       <div>
         <div className="d-flex justify-content-space-between">
-          <h5 className="text-main"><b>{title}</b></h5>
-          <h5 className="text-main"><b>{time}</b></h5>
+          <p className="text-main me-2"><b>{title}</b></p>
+          <p className="text-main"><b>{time}</b></p>
         </div>
         
         <ul>
