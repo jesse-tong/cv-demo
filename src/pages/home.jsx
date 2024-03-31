@@ -20,7 +20,7 @@ export default function Home() {
   /* We use state to set the hello string from the array https://reactjs.org/docs/hooks-state.html
      - We'll call setHello when the user clicks to change the string
   */
-  const [hello, setHello] = React.useState(strings[0]);
+
   var contact_list = new Map(); contact_list['phone_number'] = "0878668596";
   contact_list['git'] = 'https://github.com/jesse-tong'; contact_list['email'] = "someemail@smtpserver.com";
   
