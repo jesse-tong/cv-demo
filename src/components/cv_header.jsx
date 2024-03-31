@@ -8,7 +8,7 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
   
   const gender = personal_info.get('gender') || 'Other';
   const birth_date = personal_info.get('birth_date') || 'N/A';
-  const birth_place = personal_info.get('birth_place');
+  const place = personal_info.get('place');
   
   return (
     <>
@@ -25,10 +25,41 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
                 <li>Email: {email}</li>
                 <li>Gender: {gender}</li>
                 <li>Birth date: {birth_date}</li>
-                <li>Birth place: {birth_place}</li>
+                <li>Birth place: {place}</li>
               </ul>
               <div className="col">
-                <div className="row"></div>
+                <div className="row">
+                  <div className="row-cols-3">
+                    <div className="col my-1">
+                      <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary"><i className="bi bi-gender-ambiguous"></i></div>
+                      <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary">{gender}</span>
+                    </div>
+                    <div className="col my-1">
+                      <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary"><i className="bi bi-cake2"></i></div>
+                      <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary">{birth_date}</span>
+                    </div>
+                    <div className="col my-1">
+                      <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary"><i className="bi bi-cake2"></i></div>
+                      <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary">{birth_date}</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col my-1">
+                    <div className="col my-1">
+                      <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary"><i className="bi bi-envelope"></i></div>
+                      <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary">{email}</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col my-1">
+                    <div className="col my-1">
+                      <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary"><i className="bi bi-geo-alt-fill"></i></div>
+                      <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary">{place}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
               <h5 className="text-primary">Summary</h5>
               <p>{summary}</p>
