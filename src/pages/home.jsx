@@ -6,6 +6,7 @@ import CVHeader from '../components/cv_header';
 import Section from '../components/section';
 import Summary from '../components/summary';
 import Fillbar from '../components/fillbar';
+import Subsection from'../components/subsection';
 
 // Our language strings for the header
 const strings = [
@@ -54,13 +55,8 @@ export default function Home() {
               <div className="row">
                 {/*column 1*/}
                 <div className="col-6">
-                  <Section icon="rocket-takeoff" section_str="Skills" />
-                  <ul>
-                    <li><p>Skill 1</p></li>
-                    <li><p>Skill 2</p></li>
-                    <li><p>Skill 3</p></li>
-                    <li><p>Skill 4</p></li>
-                  </ul>
+                  <Section icon="rocket-takeoff" section_str="Dự án đã làm" />
+                  <Subection title={"Ứng dụng hỗ trợ học tiếng Anh bằng AI" time=""
                 </div>
                 {/*column 2*/}
                 <div className="col">
