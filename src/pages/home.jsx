@@ -40,7 +40,7 @@ export default function Home() {
   var personal_info = new Map(); personal_info['gender'] = 'Gender here'; personal_info['birth_date'] = "02/10/2002";
   personal_info['place'] = "Ho Chi Minh City";
   
-  const summary = "Trở thành một developer giỏi, có khả năng xây dựng và thiết lập các backend, testing và quản lý cơ sở dữ liệu. Mong muốn được làm trong môi trường chuyên nghiệp, hướng tới full-stack hoặc project leader.";
+  const summary = "Trở thành một developer giỏi, có khả năng xây dựng và thiết lập các backend, testing và quản lý cơ sở dữ liệu.\nMong muốn được làm trong môi trường chuyên nghiệp, hướng tới full-stack hoặc project leader.";
   const image = "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   return (
     <>
@@ -71,8 +71,10 @@ export default function Home() {
                   <Section icon="suitcase-lg-fill" section_str="Học vấn và kinh nghiệm" />
                   <Subsection title={"ĐH KHTN - ĐHQG TP.HCM"} time={"2021-Dự kiến 9/2025"} description={""} />
                   <Section icon="" section_str="Kỹ năng" />
-                  <Subsection title={"Kỹ năng chính: "} time={""} description="" list={['Backend: Express.js, Flask, ASP.NET (sẽ học)', 'CSDL: MariaDB, MongoDB, SQL Server', 
+                  <Subsection title={"Kỹ năng chính: "} time={""} description="" list={['Backend: Express.js, Flask, ASP.NET (sẽ học)', 'CSDL: MariaDB, MongoDB, SQL Server', 'Frontend: React, Vue.js',
                                                                                         'Testing & QA: Selenium (sẽ học), Docker(sẽ học)', 'Kỹ năng khác: Jira, Git, Linux']} />
+                  <Subsection title={"Kỹ năng khác: "} time={""} description="" list={['Numpy, Pandas, Tensorflow,...']} />
+                  
                 </div>
               </div>
             </div>
@@ -87,8 +89,13 @@ export default function Home() {
             <h5 className="text-white mb-3"><b>Điều quan tâm</b></h5>
             <p className="text-white mt-2">Cải thiện thuyết trình, giao tiếp với các khách hàng và developer</p>
             <Fillbar value="85" />
-            <p className="text"
-            
+            <p className="text-white mt-2">Cố gắng đạt IELTS 7.5 trở lên</p>
+            <Fillbar value="80" />
+            <p className="text-white mt-2">Học ngoại ngữ mới như Tiếng Pháp (có học từ thời cấp 3 tuy nhiên rất cơ bản), tiếng Nhật</p>
+            <Fillbar value="75" />
+            <p className="text-white mt-2">Học thêm về bảo mật CSDL, bảo mật web, các framework khác như Lavarel, Flutter, Kotlin, Kafka,...</p>
+            <Fillbar value="90" />
+            <h5 className="text-white mt-3">Chứng chỉ khác</h5>
           </div>
         </div>
       </div>
