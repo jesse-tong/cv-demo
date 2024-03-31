@@ -27,20 +27,20 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
                     <div className="col my-1">
                       <div className="d-flex">
                         <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary me-2"><i className="bi bi-gender-ambiguous"></i></div>
-                        <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary"><b>{gender}</b></span>
+                        <span style={{fontSize: '18px', fontFamily: 'helvetica'}}>{gender}</span>
                       </div>
                     </div>
                     <div className="col my-1">
                       <div className="d-flex">
                         <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary me-2"><i className="bi bi-cake2"></i></div>
-                        <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary"><b>{birth_date}</b></span>
+                        <span style={{fontSize: '18px', fontFamily: 'helvetica'}} >{birth_date}</span>
                       </div>
                     </div>
                       
                     <div className="col my-1">
                       <div className="d-flex">
                         <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary me-2"><i className="bi bi-telephone"></i></div>
-                        <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary"><b>{phone_number}</b></span>
+                        <span style={{fontSize: '18px', fontFamily: 'helvetica'}}>{phone_number}</span>
                       </div>
                     </div>
                   </div>
