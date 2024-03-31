@@ -8,7 +8,7 @@ function Section({icon, section_str}){
           <i className={"m-auto bi bi-" + icon}></i>
         </div>
         <div className="list-group-item border-bottom-4 border-primary">
-          <span className="ms-2 my-auto" style="fontFamily: arial; fontSize: 24px">{section_str}</span>
+          <span className="ms-2 my-auto" style='fontFamily: "helvetica", "arial"; fontSize: 24px'>{section_str}</span>
         </div>
       </div>
     </>
