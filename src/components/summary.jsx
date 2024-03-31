@@ -3,15 +3,11 @@ import React from 'react';
 function Summary({summary}){
   return (
     <>
-      <div className="mt-4 bg-light border-0 border-rounded" style={{width: '250px'}}>
-        <h4 className="text-main">SUMMARY</h4>
+      <div className="px-4 py-3 mt-4 bg-light border-1 rounded-4" style={{width: '130%', position: 'relative'}}>
+        <h5 className="text-main"><b>Summary</b></h5>
         <span className="">{summary}</span>
-        <svg width="35" height="35" className="summary-left-quote">
-          <image xlink:href="https://www.svgrepo.com/show/493717/quote-open-editor.svg" />
-        </svg>
-        <svg width="35" height="35" className="summary-right-quote">
-          <image xlink:href="https://www.svgrepo.com/svg/493715/quote-close-editor" />
-        </svg>
+        <img src="https://www.svgrepo.com/show/493717/quote-open-editor.svg" className="summary-left-quote" style={{width: '35px', height: '35px'}}/>
+        <img src="https://www.svgrepo.com/show/493715/quote-close-editor.svg" className="summary-right-quote" style={{width: '35px', height: '35px'}}/>
       </div>
     </>
   );
