@@ -34,7 +34,7 @@
     "node": "20.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/glitch-hello-react"
+    "url": "https://github.com/jesse-tong/cv-demo"
   },
   "glitch": {
     "projectType": "generated_static"
