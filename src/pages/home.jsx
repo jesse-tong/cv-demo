@@ -1,6 +1,4 @@
 import * as React from "react";
-import { animated } from "react-spring";
-import { useWiggle } from "../hooks/wiggle";
 import { Link } from "wouter";
 import CVHeader from '../components/cv_header';
 import Section from '../components/section';
