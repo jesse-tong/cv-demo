@@ -92,7 +92,10 @@ export default function Home() {
           </div>
           <Summary summary={summary} />
           <div className="mt-2 w-100">
-            <Fillbar value="36" />
+            <h5 className="text-white mb-3"><b>Kỹ năng</b></h5>
+            <p className="text-white mt-2">CSS, Javascript, HTML, React, Vue.js</p>
+            <Fillbar value="80" />
+            
           </div>
         </div>
       </div>
