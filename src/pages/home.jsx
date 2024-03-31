@@ -31,12 +31,35 @@ export default function Home() {
      - We'll call setHello when the user clicks to change the string
   */
   const [hello, setHello] = React.useState(strings[0]);
-  c
+  var contact_list = Map(); contact_list['phone_number'] = "0123456789";
+  contact_list['git'] = 'https://gitlab.com/jesse-tong'; contact_list['email'] = "someemail@smtpserver.com";
+  
+  var personal_info = Map(); personal_info['gender'] = 'Gender here'; personal_info['birth_date'] = "Some birthdate";
+  personal_info['birth_place'] = "Some birthplace";
+  
+  const summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci non turpis suscipit fermentum. Donec ac eros id nisi ultricies cursus. Integer diam felis, molestie in sodales et, fermentum at eros. Cras gravida mi ac facilisis aliquet. In consequat magna a pellentesque fringilla. Proin et velit interdum, commodo nisl eget, mollis quam. ";
+  
   return (
     <>
       <div className="m-auto container-fluid bg-light" style="maxWidth: 1200px">
-      <CVHeader image="https://www.bse.vt.edu/content/bse_vt_edu/en/people/faculty/david-sample/jcr:content/bio-image.transform/xl-medium/image.jpg"
-         name="Khang Minh" role="Backend Developer" />
+        <div>
+          <CVHeader image="https://www.bse.vt.edu/content/bse_vt_edu/en/people/faculty/david-sample/jcr:content/bio-image.transform/xl-medium/image.jpg"
+           name="Khang Minh" role="Backend Developer" contact_list={contact_list} summary={summary} personal_info={personal_info}/>
+        </div>
+        <div className="row-cols-2">
+          <div className="col">
+            <Section icon="rocket-takeoff" section_str="Skills" />
+            <ul>
+              <li><p>Skill 1</p></li>
+              <li><p>Skill 2</p></li>
+              <li><p>Skill 3</p></li>
+              <li><p>Skill 4</p></li>
+            </ul>
+          </div>
+          <div className="col">
+            <Section icon="suitcase-lg-fill" 
+          </div>
+        </div>
       </div>
     </>
   );
