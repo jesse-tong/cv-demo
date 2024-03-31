@@ -7,5 +7,10 @@ export default defineConfig({
   base: "/cv-demo/",
   build: {
     outDir: "build"
+  },
+  server: {
+    cors: {
+        origin: false
+    }
   }
 });
