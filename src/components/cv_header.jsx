@@ -15,9 +15,11 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
       <div className="container-fluid">
         <div className="ms-0 me-3 mt-4 mb-3 row" >
           <div className="col ms-0 my-0 me-3">
-            <h1 style={{fontFamily: "helvetica"}} className="display-4"><b>{name}</b></h1>
-            <h4 style={{fontFamily: "helvetica", fontSize: '18px'}} className="text-secondary">{role}</h4>
-            <div className="mt-3">
+            <div className="name-box-border ps-3">
+              <h1 style={{fontFamily: "helvetica"}} className="display-4 text-main"><b>{name}</b></h1>
+              <h4 style={{fontFamily: "helvetica", fontSize: '18px'}} className="text-secondary">{role}</h4>
+            </div>
+            <div className="mt-4">
               
               <h5 className="text-primary">Personal info</h5>
               
@@ -28,21 +30,19 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
                     <div className="col my-1">
                       <div className="d-flex">
                         <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-circle bg-main me-2 d-flex justify-content-center"><i className="text-white bi bi-gender-ambiguous"></i></div>
-                        <span style={{fontSize: '18px', fontFamily: 'helvetica'}}>{gender}</span>
+                        <span style={{fontFamily: 'helvetica'}}>{gender}</span>
                       </div>
                     </div>
-                    
                     <div className="col my-1">
                       <div className="d-flex">
                         <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-circle bg-main me-2 d-flex justify-content-center"><i className="text-white bi bi-cake2"></i></div>
-                        <span style={{fontSize: '18px', fontFamily: 'helvetica'}} >{birth_date}</span>
+                        <span style={{fontFamily: 'helvetica'}} >{birth_date}</span>
                       </div>
                     </div>
-                      
                     <div className="col my-1">
                       <div className="d-flex">
                         <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-circle bg-main me-2 d-flex justify-content-center"><i className="text-white bi bi-telephone"></i></div>
-                        <span style={{fontSize: '18px', fontFamily: 'helvetica'}}>{phone_number}</span>
+                        <span style={{fontFamily: 'helvetica'}}>{phone_number}</span>
                       </div>
                     </div>
                     
@@ -53,7 +53,7 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
                     <div className="col my-1">
                       <div className="d-flex">
                         <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-circle bg-main me-2 d-flex justify-content-center"><i className="text-white bi bi-envelope"></i></div>
-                        <span style={{fontSize: '18px', fontFamily: 'helvetica'}} >{email}</span>
+                        <span style={{fontFamily: 'helvetica'}} >{email}</span>
                       </div>
                     </div>
                   </div>
@@ -63,7 +63,7 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
                     <div className="col my-1">
                       <div className="d-flex">
                         <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-circle bg-main me-2 d-flex justify-content-center"><i className="text-white bi bi-geo-alt-fill"></i></div>
-                        <span style={{fontSize: '18px', fontFamily: 'helvetica'}} >{place}</span>
+                        <span style={{fontFamily: 'helvetica'}} >{place}</span>
                       </div>
                     </div>
                   </div>

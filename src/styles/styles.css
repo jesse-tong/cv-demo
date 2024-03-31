@@ -63,3 +63,12 @@ to this section's matching END comment to see page-specific styles.
 
 }
 
+.name-box-border {
+  border-color: #2d2b42;
+  border-width: 8px;
+  border-style: none none none solid;
+}
+
+.br {
+  display: block;
+}
