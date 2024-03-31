@@ -40,7 +40,7 @@ export default function Home() {
   var personal_info = new Map(); personal_info['gender'] = 'Gender here'; personal_info['birth_date'] = "02/10/2002";
   personal_info['place'] = "Ho Chi Minh City";
   
-  const summary = "Trở thành một developer giỏi, có khả năng xây dựng và thiết lập các backend ";
+  const summary = "Trở thành một developer giỏi, có khả năng xây dựng và thiết lập các backend, testing và quản lý cơ sở dữ liệu. Mong muốn được làm trong môi trường chuyên nghiệp, hướng tới full-stack hoặc project leader.";
   const image = "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   return (
     <>
@@ -68,16 +68,11 @@ export default function Home() {
                 </div>
                 {/*column 2*/}
                 <div className="col">
-                  <Section icon="suitcase-lg-fill" section_str="Học vấn" />
-                  <Subsection title={"ĐH KHTN - ĐHQG TP.HCM"}
-                  <h5>Role 2</h5>
-                  <p><em>Company 2: </em>Date 1 - Date 2</p>
-                  <ul>
-                    <li><p>Skill 1</p></li>
-                    <li><p>Skill 2</p></li>
-                    <li><p>Skill 3</p></li>
-                    <li><p>Skill 4</p></li>
-                  </ul>
+                  <Section icon="suitcase-lg-fill" section_str="Học vấn và kinh nghiệm" />
+                  <Subsection title={"ĐH KHTN - ĐHQG TP.HCM"} time={"2021-Dự kiến 9/2025"} description={""} />
+                  <Section icon="" section_str="Kỹ năng" />
+                  <Subsection title={"Kỹ năng chính: "} time={""} description="" list={['Backend: Express.js, Flask, ASP.NET (sẽ học)', 'CSDL: MariaDB, MongoDB, SQL Server', 
+                                                                                        'Testing & QA: Selenium (sẽ học), Docker(sẽ học)', 'Kỹ năng khác: Jira, Git, Linux']} />
                 </div>
               </div>
             </div>
@@ -89,9 +84,10 @@ export default function Home() {
           </div>
           <Summary summary={summary} />
           <div className="mt-2 w-100">
-            <h5 className="text-white mb-3"><b>Kỹ năng</b></h5>
-            <p className="text-white mt-2">CSS, Javascript, HTML, React, Vue.js</p>
-            <Fillbar value="80" />
+            <h5 className="text-white mb-3"><b>Điều quan tâm</b></h5>
+            <p className="text-white mt-2">Cải thiện thuyết trình, giao tiếp với các khách hàng và developer</p>
+            <Fillbar value="85" />
+            <p className="text"
             
           </div>
         </div>
