@@ -40,7 +40,7 @@ export default function Home() {
   var personal_info = new Map(); personal_info['gender'] = 'Gender here'; personal_info['birth_date'] = "02/10/2002";
   personal_info['place'] = "Ho Chi Minh City";
   
-  const summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac orci non turpis suscipit fermentum. Donec ac eros id nisi ultricies cursus. Integer diam felis, molestie in sodales et, fermentum at eros. Cras gravida mi ac facilisis aliquet. In consequat magna a pellentesque fringilla. Proin et velit interdum, commodo nisl eget, mollis quam. ";
+  const summary = "Trở thành một developer giỏi, có khả năng xây dựng và thiết lập các backend ";
   const image = "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   return (
     <>
@@ -62,19 +62,14 @@ export default function Home() {
                     />
                   <Subsection title={"Ứng dụng thư viện online sử dụng Flask, MariaDB và Vue.js"} time={'2/2024 - Dự kiến tháng 6-2024'}
                     description={"Ứng dụng thư viện online trên nền tảng Web, cho phép thêm, mượn sách, đọc sách online."}
-                    list={[]} />
+                    list={['Lên kế hoạch và áp dụng các tiến trình trong Scrum và Agile', 'Thiết kế UML, business analysis, diagrams, làm báo cáo', 
+                           'Kĩ năng đạt được: Hiếu thêm về Scrum, Agile, Git, Jira; Học và hiểu thêm về Flask, Vue.js và Docker; Hiểu thêm về thiết kế Frontend.']} />
+                  
                 </div>
                 {/*column 2*/}
                 <div className="col">
-                  <Section icon="suitcase-lg-fill" section_str="Experience" />
-                  <h5>Role 1</h5>
-                  <p><em>Company 1: </em>Date 1 - Date 2</p>
-                  <ul>
-                    <li><p>Skill 1</p></li>
-                    <li><p>Skill 2</p></li>
-                    <li><p>Skill 3</p></li>
-                    <li><p>Skill 4</p></li>
-                  </ul>
+                  <Section icon="suitcase-lg-fill" section_str="Học vấn" />
+                  <Subsection title={"ĐH KHTN - ĐHQG TP.HCM"}
                   <h5>Role 2</h5>
                   <p><em>Company 2: </em>Date 1 - Date 2</p>
                   <ul>
