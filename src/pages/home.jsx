@@ -8,19 +8,6 @@ import Summary from '../components/summary';
 import Fillbar from '../components/fillbar';
 import Subsection from'../components/subsection';
 
-// Our language strings for the header
-const strings = [
-  "Hello React",
-  "Salut React",
-  "Hola React",
-  "안녕 React",
-  "Hej React"
-];
-
-// Utility function to choose a random value from the language array
-function randomLanguage() {
-  return strings[Math.floor(Math.random() * strings.length)];
-}
 
 /**
 * The Home function defines the content that makes up the main content of the Home page
@@ -41,7 +28,7 @@ export default function Home() {
   personal_info['place'] = "Ho Chi Minh City";
   
   const summary = "Trở thành một developer giỏi, có khả năng xây dựng và thiết lập các backend, testing và quản lý cơ sở dữ liệu.\nMong muốn được làm trong môi trường chuyên nghiệp, hướng tới full-stack hoặc project leader.";
-  const image = "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  const image = "https://static.zerochan.net/Kirisame.Marisa.full.3736906.jpg"; //Temporary until I get my face image
   return (
     <>
       <div className="m-auto row bg-white" style={{maxWidth: '1000px'}}>
@@ -68,7 +55,8 @@ export default function Home() {
                 </div>
                 {/*column 2*/}
                 <div className="col">
-                  <Section icon="suitcase-lg-fill" section_str="Học vấn và kinh nghiệm" />
+                  <Section icon="" section_str="Kinh nghiệm làm việc" />
+                  <Section icon="suitcase-lg-fill" section_str="Học vấn" />
                   <Subsection title={"ĐH KHTN - ĐHQG TP.HCM"} time={"2021-Dự kiến 9/2025"} description={""} />
                   <Section icon="" section_str="Kỹ năng" />
                   <Subsection title={"Kỹ năng chính: "} time={""} description="" list={['Backend: Express.js, Flask, ASP.NET (sẽ học)', 'CSDL: MariaDB, MongoDB, SQL Server', 'Frontend: React, Vue.js',
@@ -95,7 +83,7 @@ export default function Home() {
             <Fillbar value="75" />
             <p className="text-white mt-2">Học thêm về bảo mật CSDL, bảo mật web, các framework khác như Lavarel, Flutter, Kotlin, Kafka,...</p>
             <Fillbar value="90" />
-            <h5 className="text-white mt-3">Chứng chỉ khác</h5>
+            <h5 className="text-white mt-3"><b>Chứng chỉ khác</b></h5>
           </div>
         </div>
       </div>
