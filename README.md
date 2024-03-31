@@ -1,1 +1,1 @@
-# My CV (deployed at https://jesse-tong.github.io/cv-demo
+# My first attempt of creating a CV with React
