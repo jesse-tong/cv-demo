@@ -4,6 +4,7 @@ import { useWiggle } from "../hooks/wiggle";
 import { Link } from "wouter";
 import CVHeader from '../components/cv_header';
 import Section from '../components/section';
+import Summary from '../components/summary';
 
 // Our language strings for the header
 const strings = [
@@ -41,7 +42,7 @@ export default function Home() {
   const image = "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   return (
     <>
-      <div className="m-auto row bg-light" style={{maxWidth: '1000px'}}>
+      <div className="m-auto row bg-white" style={{maxWidth: '1000px'}}>
         <div className="col-8 ms-4 me-3 mt-4 mb-3">
           <div>
             <CVHeader 
@@ -84,10 +85,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-3 bg-main">
+        <div className="col-3 bg-main d-flex flex-column align-items-center" style={{overflow: 'visible'}}>
           <div className="mx-3 mt-4">
             <img src={image} className="border border-2 border-secondary rounded-circle" alt="CV Image" style={{width: '100%', aspectRatio: '1/1'}}></img>
           </div>
+          <Summary summary={summary} />
         </div>
       </div>
     </>
