@@ -6,9 +6,9 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
   const linkedin = contact_list.get('linkedin');
   const git = contact_list.get('git'); //Remote git repos, such as Github or Gitlab or Codeberg
   
-  const gender = personal_info.get('gender') || 'Other';
-  const birth_date = personal_info.get('birth_date') || 'N/A';
-  const place = personal_info.get('place');
+  const gender = personal_info['gender'] || 'Other';
+  const birth_date = personal_info['birth_date'] || 'N/A';
+  const place = personal_info['place'];
   
   return (
     <>
@@ -63,7 +63,7 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
                     <div className="col my-1">
                       <div className="d-flex">
                         <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary me-2 d-flex justify-content-center"><i className="bi bi-geo-alt-fill"></i></div>
-                        <span style={{fontSize: '15px', fontFamily: 'helvetica'}} >{place}</span>
+                        <span style={{fontSize: '18px', fontFamily: 'helvetica'}} >{place}</span>
                       </div>
                     </div>
                   </div>
