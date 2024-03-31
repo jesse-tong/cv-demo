@@ -72,3 +72,20 @@ to this section's matching END comment to see page-specific styles.
 .br {
   display: block;
 }
+
+.fillbar {
+  height: 14px;
+  border-radius: 7px;
+  width: 100%;
+  position: relative;
+  background-color: #efab3d;
+  border: 1px solid #f5ebd6;
+}
+
+.fillbar-value {
+  position: absolute;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #f5ebd6;
+}
+

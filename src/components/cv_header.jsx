@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CVHeader({image, name, role, personal_info, summary, contact_list}){
+function CVHeader({image, name, role, personal_info, contact_list}){
   const phone_number = contact_list['phone_number'];
   const email = contact_list['email'];
   const linkedin = contact_list.get('linkedin');
@@ -21,7 +21,7 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
             </div>
             <div className="mt-4">
               
-              <h5 className="text-primary">Personal info</h5>
+              <h5 className="text-main mb-3"><b>Personal info</b></h5>
               
               <div className="col">
                 <div className="row">
@@ -69,8 +69,6 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
                   </div>
                 </div>
               </div>
-              <h5 className="text-primary">Summary</h5>
-              <p>{summary}</p>
             </div>
           </div>
           
