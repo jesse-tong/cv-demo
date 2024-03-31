@@ -20,27 +20,28 @@ function CVHeader({image, name, role, personal_info, summary, contact_list}){
             <div className="mt-3">
               
               <h5 className="text-primary">Personal info</h5>
-              <ul>
-                <li>Phone number: {phone_number}</li>
-                <li>Email: {email}</li>
-                <li>Gender: {gender}</li>
-                <li>Birth date: {birth_date}</li>
-                <li>Birth place: {place}</li>
-              </ul>
+              
               <div className="col">
                 <div className="row">
-                  <div className="row-cols-3">
+                  <div className="row row-cols-3">
                     <div className="col my-1">
-                      <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary"><i className="bi bi-gender-ambiguous"></i></div>
-                      <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary">{gender}</span>
+                      <div className="d-flex">
+                        <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary me-2"><i className="bi bi-gender-ambiguous"></i></div>
+                        <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary"><b>{gender}</b></span>
+                      </div>
                     </div>
                     <div className="col my-1">
-                      <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary"><i className="bi bi-cake2"></i></div>
-                      <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary">{birth_date}</span>
+                      <div className="d-flex">
+                        <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary me-2"><i className="bi bi-cake2"></i></div>
+                        <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary"><b>{birth_date}</b></span>
+                      </div>
                     </div>
+                      
                     <div className="col my-1">
-                      <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary"><i className="bi bi-cake2"></i></div>
-                      <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary">{birth_date}</span>
+                      <div className="d-flex">
+                        <div style={{aspectRatio: '1/1', height: '30px'}} className="rounded-2 bg-primary me-2"><i className="bi bi-telephone"></i></div>
+                        <span style={{fontSize: '15px', fontFamily: 'helvetica'}} className="text-primary"><b>{phone_number}</b></span>
+                      </div>
                     </div>
                   </div>
                 </div>
