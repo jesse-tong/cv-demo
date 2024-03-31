@@ -12,12 +12,11 @@ import { HelmetProvider } from 'react-helmet-async';
 */
 
 // Render the site https://reactjs.org/docs/react-dom.html#render
-c
-ReactDOM.render(
+const container = document.getElementById("root"); const root = createRoot(container);
+root.render(
   <React.StrictMode>
     <HelmetProvider>
       <App />
     </HelmetProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );

@@ -41,14 +41,14 @@ export default function Home() {
   
   return (
     <>
-      <div className="m-auto container-fluid bg-light" style="maxWidth: 1200px">
+      <div className="m-auto container-fluid bg-light" style={{maxWidth: '1200px'}}>
         <div>
           <CVHeader image="https://www.bse.vt.edu/content/bse_vt_edu/en/people/faculty/david-sample/jcr:content/bio-image.transform/xl-medium/image.jpg"
            name="Khang Minh" role="Backend Developer" contact_list={contact_list} summary={summary} personal_info={personal_info}/>
         </div>
-        <div className="row-cols-2">
+        <div className="row  mx-4 mt-4 mb-3">
           {/*column 1*/}
-          <div className="col">
+          <div className="col-6">
             <Section icon="rocket-takeoff" section_str="Skills" />
             <ul>
               <li><p>Skill 1</p></li>
