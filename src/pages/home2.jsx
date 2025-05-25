@@ -8,7 +8,7 @@ import Subsection from'../components/subsection';
 import ProfileImage from '../assets/21120263.jpg';
 
 
-export default function Home() {
+export default function Home2() {
 
 
   var contact_list = new Map(); contact_list['phone_number'] = "0878668596";
@@ -19,7 +19,7 @@ export default function Home() {
   var personal_info = new Map(); personal_info['birth_date'] = "02/10/2002";
   personal_info['place'] = "Dĩ An, Bình Dương";
   
-  const summary = "Tôi là sinh viên năm 4 ngành Công nghệ thông tin tại ĐH KHTN - ĐHQG TP.HCM. Với kinh nghiệm và kiến thức về NLP, trực quan hóa dữ liệu, tôi mong muốn ứng tuyển vào vị trí Data Scientist (Intern) của công ty để có thể áp dụng những kiến thức, kinh nghiệm của bản thân để cải thiện sản phẩm và mang lại giá trị hữu ích cho doanh nghiệp. Trong 2-3 năm tới, tôi muốn mở rộng kiến thức về machine learning và Big Data để có thể đảm nhiệm tốt hơn vị trí của mình.";
+  const summary = "Tôi là sinh viên năm 4 ngành Công nghệ thông tin tại ĐH KHTN - ĐHQG TP.HCM. Tôi mong muốn ứng tuyển vào vị trí thực tập sinh Java/.NET của công ty (có thể full-time vào tháng 8/2025 trở đi, hoặc part-time) để có thể áp dụng những kiến thức, kinh nghiệm của bản thân để cải thiện sản phẩm và mang lại giá trị hữu ích cho doanh nghiệp.";
   const image = ProfileImage; 
   return (
     <>
@@ -34,53 +34,56 @@ export default function Home() {
               <div className="row">
                 {/*column 1*/}
                 <div className="col-12">
+                  <Section icon="person" section_str="Mục tiêu nghề nghiệp" />
+                  <Subsection title={null} time={null} description={null} list={[
+                    'Ứng dụng các kiến thức, kinh nghiệm về lập trình web vào môi trường làm việc thực tế.',
+                    'Thu thập thêm kiến thức về lập trình Java, .NET, CSDL, API, bảo mật thông tin, kiến trúc phần mềm.',
+                    'Trau dồi thêm kỹ năng ngoại ngữ, làm việc nhóm, kỹ năng giao tiếp, kỹ năng giải quyết vấn đề.',
+                    'Phát triển bản thân để có thể trở thành một lập trình viên giỏi, có thể làm việc trong môi trường quốc tế.',
+                  ]} />
                   <Section icon="rocket-takeoff" section_str="Dự án" />
-                  <Subsection title={"Phát hiện hate speech cho ngôn ngữ tiếng Việt"} time={"2/2025 - 5/2025"}
-                    description={"Đồ án phát hiện hate speech cho ngôn ngữ tiếng Việt"}
-                    list={[
-                      'Công nghệ sử dụng: Transformers, PyTorch BERT (PhoBERT và VisoBERT), Streamlit cho giao diện người dùng.',
-                      'Mô tả: Dự án phát hiện hate speech cho ngôn ngữ tiếng Việt, sử dụng mô hình BERT (PhoBERT và VisoBERT) để phân loại văn bản thành các loại hate speech khác nhau.',
-                      'Sử dụng knowledge distillation để huấn luyện mô hình LSTM nhỏ hơn với tốc độ nhanh hơn.'
-                    ]}
-                    />
                   <Subsection title={"iLawChatbot (đồ án nhóm)"} time={"9/2024 - 12/2024"} 
                     description={"Chatbot Luật sở hữu trí tuệ"}
                     list={[
-                      'Vị trí: Backend developer',
-                      'Công nghệ sử dụng: Transformers, OpenAI, Chroma, Langchain, FastAPI cho backend; React để xây dựng cho giao diện người dùng.',
+                      'Công nghệ sử dụng: React để xây dựng frontend; FastAPI, Transformers, OpenAI, Chroma, Langchain cho backend',
                       'Xây dựng một chatbot hỗ trợ người dùng trong việc tìm kiếm thông tin về luật sở hữu trí tuệ.',
                       'Truy vấn các thông tin luật, dự thảo và trích nguồn sử dụng pipeline Advanced RAG từ Langchain và Chroma.',
                       'Tích hợp API của OpenAI để trả lời các câu hỏi và truy vấn pháp luật của người dùng.'
                     ]}
                     />
-                  <Subsection title={"Ứng dụng hỗ trợ học tiếng Anh bằng AI"} time={"2/2024 - 4/2024"}
-                    description={"Ứng dụng đơn giản hỗ trợ học tiếng Anh bằng Gemini"}
-                    list={['Ứng dụng hỗ trợ tóm tắt văn bản, giải thích nghĩa từ và câu, chỉnh ngữ pháp,...',
-                      'Sử dụng speech-to-text (Whisper) và text-to-speech để hỗ trợ quá trình phát âm tiếng Anh của người dùng.',
-                      'Tích hợp Gemini API để hỗ trợ người dùng trong việc học tiếng Anh.',
-                      'Ứng dụng Graph-of-thoughts để tối ưu cho lập lịch trình của người dùng.',
+                  <Subsection title={"Website quản lý lớp học"} time={"7/2024 - 9/2024"}
+                    description={"Đồ án cá nhân website quản lý lớp học giống Google Classroom"}
+                    list={[
+                      'Công nghệ sử dụng: Django, Bootstrap.',
+                      'Mô tả: Ứng dụng quản lý lớp học tương tự Google Classroom.',
+                      'Cho phép học sinh đăng ký lớp học, nộp bài tập, xem điểm số, trao đổi với giáo viên về bài tập/bài học.',
+                      'Cho phép giáo viên quản lý lớp học, bài tập, điểm số, bài học',
+                      'Tích hợp thêm tính năng quiz và tạo lớp học trực tuyến sử dụng Jitsi',
                     ]}
                     />
-                  <Subsection title={"Trang web quản lý thư viện"} time={'2/2024 - 7-2024'}
+                  <Subsection title={"Trang web quản lý thư viện (đồ án nhóm)"} time={'2/2024 - 7-2024'}
                     description={"Developer"}
                     list={[
-                      'Tham gia vào tất cả các khâu của quá trình phát triển dự án.',
-                      'Tìm hiểu yêu cầu của khách hàng và lên kế hoạch cho dự án để đạt được tiến độ đề ra.',
-                      'Thiết kế giao diện người dùng tương tác sử dụng Vue.js và xây dựng các chức năng của trang web sử dụng framework Flask.',
-                      'Trực quan hóa dashboard thông tin đăng nhập sử dụng Chart.js',
+                      'Công nghệ sử dụng: Flask, Vue.js, Bootstrap, Stripe, MariaDB (CSDL).',
+                      'Cho phép thủ thư quản lý sách và mượn trả sách; và người dùng mượn trả sách, tìm kiếm sách.',
+                      'Thiết kế giao diện người dùng sử dụng Vue.js và xây dựng các chức năng của trang web sử dụng framework Flask.',
+                      'Tích hợp thêm tính năng quản lý các ghế ngồi, máy tính trong thư viện.',
                       'Tích hợp Stripe và Paypal để xử lý thanh toán phí dịch vụ thư viện dễ dàng, hiệu quả.',
                     ]} />
                   
                   {/* <Section icon="suitcase-lg-fill" section_str="Kinh nghiệm làm việc" /> */}
                   <Section icon="mortarboard-fill" section_str="Học vấn" />
-                  <Subsection title={"ĐH KHTN - ĐHQG TP.HCM"} time={"2021-nay"} description={"Ngành Công nghệ thông tin"} />
+                  <Subsection title={"ĐH KHTN - ĐHQG TP.HCM"} time={"2021-nay"} description={"Ngành Công nghệ thông tin"} 
+                  list={[
+                    'Dự kiến ra trường vào đầu năm 2026'
+                  ]}/>
                   <Section icon="person-check" section_str="Ngôn ngữ & Framework" />
                   <Subsection title={"Hiện tại"} time={null} description={null} list={[
                     'Hệ điều hành: Linux, Windows',
                     'Frontend: HTML, CSS, Javascript, React, Vue',
-                    'Backend: Python, Flask, FastAPI, Django',
-                    'Machine Learning: Langchain, PyTorch, Transformers',
-                    'Trực quan hóa dữ liệu: Tableau, d3.js',
+                    'Backend: Python, Flask, Django',
+                    'CSDL: SQL Server, MariaDB, MongoDB',
+                    'Đang tìm hiểu về Java (Spring Boot), sử dụng được git',
                   ]} />
                 </div>
                 

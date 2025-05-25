@@ -11,7 +11,7 @@ to this section's matching END comment to see page-specific styles.
   --color-bg: #FFFFA0;
   --color-text-main: #000000;
   --color-primary: #AFECE0;
-  --wrapper-height: 85vh;
+  --wrapper-height: 85%;
   --image-max-width: 320px;
   --font-family: "HK Grotesk";
   --font-family-header: "HK Grotesk";
